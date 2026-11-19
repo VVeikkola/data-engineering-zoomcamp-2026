@@ -1,0 +1,37 @@
+# 01 – Introduction to Docker
+
+## Objective
+
+Understand Docker fundamentals, container lifecycle, environment isolation, and persistent data storage.
+
+## What I Learned
+
+- Docker images and containers
+- Container lifecycle and management
+- Environment isolation and reproducibility
+- Base images and slim images
+- Container entrypoints
+- Bind mounts and persistent data storage
+- Troubleshooting container and filesystem issues
+
+## Practical Exercises
+
+- Running and managing Ubuntu containers
+- Installing Python inside a container
+- Understanding container statelessness
+- Running Python containers with different base images
+- Sharing files between the host and a container using bind mounts
+- Executing Python scripts inside a container
+- Verifying that mounted files persist after container removal
+
+## Troubleshooting
+
+During the bind mount exercise, I encountered a filesystem path issue that resulted in an empty mounted directory. I diagnosed the issue using `pwd`, `find`, and `ls`, corrected the directory structure, and successfully executed the Python script inside the container.
+
+## Key Takeaway
+
+Docker provides reproducible and isolated execution environments for data pipelines. Bind mounts allow data to persist independently of the container lifecycle.
+
+## Status
+
+Completed ✅
