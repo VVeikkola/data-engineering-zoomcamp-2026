@@ -453,6 +453,7 @@ name = "data-engineering-zoomcamp-2026"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "click" },
     { name = "pandas" },
     { name = "psycopg", extra = ["binary", "pool"] },
     { name = "psycopg2-binary" },
@@ -473,6 +474,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "click", specifier = ">=8.5.1" },
     { name = "pandas", specifier = ">=3.1.1" },
     { name = "psycopg", extras = ["binary", "pool"], specifier = ">=3.3.9" },
     { name = "psycopg2-binary", specifier = ">=2.9.13" },
