@@ -7,8 +7,14 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine, URL
 
 # Load environment variables
-env_path = Path(__file__).resolve().parents[2] / ".env"
-load_dotenv(env_path)
+env_path = Path(__file__).resolve()
+
+for parent in env_path.parents:
+    env_file = parent / ".env"
+
+    if env_file.is_file():
+        load_dotenv(env_file)
+        break
 
 # Data source
 prefix = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/"
